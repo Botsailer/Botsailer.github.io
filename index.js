@@ -5,7 +5,6 @@ function disableselect() {
 function reEnable() {
     return false
 }
-
 window.onselectstart = new Function("return false")
 
 document.addEventListener("contextmenu", function (e) {
