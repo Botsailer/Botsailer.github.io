@@ -59,10 +59,16 @@ nav ul:hover{
     z-index: -1;
     opacity: 0.5;
 }
-@media (max-aspect-ratio: 16/9){
+@media (min-aspect-ratio: 16/9){
     .bg{
         width: 100%;
         height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .bg{
+        width: auto;
+        height: 100%;
     }
 }
 .con h1 {
@@ -72,10 +78,16 @@ nav ul:hover{
     animation: animate 1s linear infinite;
 
 }
-@media (max-aspect-ratio: 16/9){
+@media (min-aspect-ratio: 16/9){
     .con h1{
         width: 100%;
         height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .con h1{
+        width: auto;
+        height: 100%;
     }
 }
 
