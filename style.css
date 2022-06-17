@@ -90,6 +90,15 @@ nav ul:hover{
         height: 100%;
     }
 }
+@media (max-width: 767px){
+.bg{
+display: none;
+}
+body{
+background:url('anime.jpg);
+background-size:cover;
+}
+}
 
 @keyframes animate {
     0%{
