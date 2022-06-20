@@ -10,20 +10,22 @@ body
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: transparent;
 	min-height: 100vh;
-	background: #000;
 	overflow: hidden;
+	background-color: #000;
 }
 ul li
 {
-	list-style: none;
+	padding-right: 0px;
+	list-style:none;
 }
 ul li a
 {
-	position: relative;
-	display: block;
+	position:relative;
+	display:inline-block;
 	color: transparent;
-	-webkit-text-stroke: 1px #fff;
+	-webkit-text-stroke: 1px rgb(0, 243, 20);
 	font-size: 6.5em;
 	font-weight: 900;
 	text-decoration: none;
@@ -57,4 +59,40 @@ ul li a:hover:after
 	z-index: 2;
 	-webkit-text-stroke: 1px #000;
 	transform: translate(20px,-20px);
+}
+
+#back{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+	opacity: 0.7;
+	
+
+}
+h1{
+
+	text-align: center; 
+	font-size: 150px;
+	font-family: 'Dancing Script', cursive;
+	 color: transparent;
+	 transition: 1s;
+	 -webkit-text-stroke: 5px #4c00ff ;
+	 animation: neon 3s linear infinite;	
+}
+@keyframes neon {
+    0%,20%,24%,26%,69%,71%,100%{
+        text-shadow:
+        rgb(5, 252, 190) 0 0 12px ,
+        #0408f3 0 0 28px,
+        rgb(136, 0, 248) 0 0 50px;
+     }
+     25%, 70%{
+        text-shadow: none;
+     }
+    
 }

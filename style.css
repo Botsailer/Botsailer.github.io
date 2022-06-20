@@ -95,8 +95,10 @@ nav ul:hover{
 display: none;
 }
 body{
-background:url('anime.jpg);
-background-size:cover;
+background: url('anime.jpg');
+background-size: cover;
+background-repeat: none;
+
 }
 }
 
