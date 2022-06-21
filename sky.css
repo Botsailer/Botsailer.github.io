@@ -30,6 +30,7 @@ ul li a
 	font-weight: 900;
 	text-decoration: none;
 	line-height: 1.2em;
+	margin-left: 250px;
 }
 ul li a:hover
 {
@@ -73,14 +74,38 @@ ul li a:hover:after
 	opacity: 0.6;
 	background-attachment: fixed;
 }
+#blur{
+	/*height: 850px;
+	width: 1000px;
+	position: absolute;
+	opacity: 0.3;
+	background: linear-gradient(#fff,#448de0);
+*/
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1000px;
+	height: 850px;
+	border-radius: 250px;
+	opacity: 0.3;
+	background: #3494E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #EC6EAD, #b1df0d);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #EC6EAD, #d8c410); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  
+}
+
+
 h1{
 
 	text-align: center; 
 	font-size: 150px;
+	position: relative;
 	font-family: 'Dancing Script', cursive;
 	 color: transparent;
 	 transition: 1s;
-	 -webkit-text-stroke: 5px #4c00ff ;
+	 -webkit-text-stroke: 5px #ff1100 ;
 	 animation: neon 3s linear infinite;	
 }
 @keyframes neon {
