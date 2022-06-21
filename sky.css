@@ -85,8 +85,8 @@ ul li a:hover:after
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 1000px;
-	height: 850px;
+	width: 900px;
+	height: 750px;
 	border-radius: 250px;
 	opacity: 0.3;
 	background: #3494E6;  /* fallback for old browsers */
