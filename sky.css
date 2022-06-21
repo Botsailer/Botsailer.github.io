@@ -20,6 +20,10 @@ ul li
 	padding-right: 0px;
 	list-style:none;
 }
+#f{
+	background-color:transparent;
+
+}
 ul li a
 {
 	position:relative;
@@ -70,8 +74,12 @@ ul li a:hover:after
 	background-repeat: no-repeat;
 	background-size: cover;
 	z-index: -1;
-	opacity: 0.6;
 	background-attachment: fixed;
+}
+
+#inf{
+	position: absolute;
+	
 }
 h1{
 
@@ -83,6 +91,18 @@ h1{
 	 -webkit-text-stroke: 5px #4c00ff ;
 	 animation: neon 3s linear infinite;	
 }
+#blur{
+	height: 850px;
+	width: 1000px;
+	background-color: rgb(0, 0, 0);
+	opacity: 0.5;
+	z-index: 0;
+	border-radius: 120px;
+}
+#f{
+	z-index: 2;
+}
+
 @keyframes neon {
     0%,20%,24%,26%,69%,71%,100%{
         text-shadow:
@@ -98,12 +118,12 @@ h1{
 @media only screen and (max-width: 768px) {
 	img {
 	height: 100%;
-	width: auto;
+	width: 100%;
 	}
 }
 @media only screen and (min-width: 480px) {
 	img {
 	height: 100%;
-	width: auto;
+	width: 100%;
 	}
-	}
+}
