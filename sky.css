@@ -109,17 +109,12 @@ h1{
 	 animation: neon 3s linear infinite;	
 }
 @keyframes neon {
-    0%,20%,24%,26%,69%,71%,100%{
+    0%,20%,25%,26%,69%,70%,100%{
         text-shadow:
         rgb(5, 252, 190) 0 0 12px ,
         #0408f3 0 0 28px,
         rgb(136, 0, 248) 0 0 50px;
      }
-     25%, 70%{
-        text-shadow: none;
-     }
-    
-}
 @media only screen and (max-width: 768px) {
 	img {
 	height: 100%;
