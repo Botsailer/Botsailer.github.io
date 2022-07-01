@@ -14,6 +14,7 @@ body
 	min-height: 100vh;
 	overflow: hidden;
 	background-color: #000;
+	border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
 }
 ul li
 {
@@ -26,11 +27,11 @@ ul li a
 	display:inline-block;
 	color: transparent;
 	-webkit-text-stroke: 1px rgb(116, 255, 2);
-	font-size: 6.5em;
+	font-size: 4.5em;
 	font-weight: 900;
 	text-decoration: none;
 	line-height: 1.2em;
-	margin-left: 1.4em;
+	margin-left: 2.9em;
 }
 ul li a:hover
 {
@@ -64,35 +65,33 @@ ul li a:hover:after
 
 #back{
 	position: fixed;
-	width: 100%;
+	width: 99%;
 	height: 100%;
 	background-image: url(res/another.png);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
-	z-index: -1;
-	opacity: 0.6;
+	background-size:cover;
+	z-index: 0;
+	opacity: 1;
+	background-color: #f00;
 	background-attachment: fixed;
 }
 #blur{
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 700px;
-	height: 550px;
+	position: relative;
+	width: 44em;
+	height: 25.9em;
 	border-radius: 7em;
-	opacity: 0.2;
-	background: #0c0c0c;
+	margin-top: 12em;
+	margin-left: auto;
+	z-index: -1;
 
   
 }
 
-
 h1{
 
 	text-align: center; 
-	font-size: 100px;
+	font-size: 6.25em;
 	position: relative;
 	font-family: 'Dancing Script', cursive;
 	 color: transparent;
@@ -108,15 +107,6 @@ h1{
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 	 animation: animate 3s linear infinite;	
 }
-@keyframes neon {
-    0%,20%,25%,26%,69%,70%,100%{
-        text-shadow:
-        rgb(5, 252, 190) 0 0 12px ,
-        #0408f3 0 0 28px,
-        rgb(136, 0, 248) 0 0 50px;
-     }
-	}
-
 @keyframes animate {
 			0% {
 		  background-position: -300%;
