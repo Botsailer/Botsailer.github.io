@@ -25,16 +25,16 @@ ul li a
 	position:relative;
 	display:inline-block;
 	color: transparent;
-	-webkit-text-stroke: 1px rgb(0, 243, 20);
+	-webkit-text-stroke: 1px rgb(116, 255, 2);
 	font-size: 6.5em;
 	font-weight: 900;
 	text-decoration: none;
 	line-height: 1.2em;
-	margin-left: 250px;
+	margin-left: 1.4em;
 }
 ul li a:hover
 {
-	color: #fff;
+	color: rgb(11, 26, 241);
 	-webkit-text-stroke: 1px #000;
 	transition: 0.5s;
 }
@@ -56,7 +56,7 @@ ul li a:hover:before
 }
 ul li a:hover:after 
 {
-	color: #0ff;
+	color: rgb(23, 219, 56);
 	z-index: 2;
 	-webkit-text-stroke: 1px #000;
 	transform: translate(20px,-20px);
@@ -66,7 +66,7 @@ ul li a:hover:after
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg');
+	background-image: url(res/another.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -75,23 +75,15 @@ ul li a:hover:after
 	background-attachment: fixed;
 }
 #blur{
-	/*height: 850px;
-	width: 1000px;
-	position: absolute;
-	opacity: 0.3;
-	background: linear-gradient(#fff,#448de0);
-*/
 	position: absolute;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 900px;
-	height: 750px;
-	border-radius: 250px;
-	opacity: 0.3;
-	background: #3494E6;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #EC6EAD, #b1df0d);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #EC6EAD, #d8c410); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	width: 700px;
+	height: 550px;
+	border-radius: 7em;
+	opacity: 0.2;
+	background: #0c0c0c;
 
   
 }
@@ -100,13 +92,21 @@ background: linear-gradient(to right, #EC6EAD, #d8c410); /* W3C, IE 10+/ Edge, F
 h1{
 
 	text-align: center; 
-	font-size: 150px;
+	font-size: 100px;
 	position: relative;
 	font-family: 'Dancing Script', cursive;
 	 color: transparent;
 	 transition: 1s;
-	 -webkit-text-stroke: 5px #ff1100 ;
-	 animation: neon 3s linear infinite;	
+	 -webkit-text-stroke: 2px #3465ec ;
+	  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgb(18, 163, 5), rgb(255, 255, 255), #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 2s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+	 animation: animate 3s linear infinite;	
 }
 @keyframes neon {
     0%,20%,25%,26%,69%,70%,100%{
@@ -115,12 +115,16 @@ h1{
         #0408f3 0 0 28px,
         rgb(136, 0, 248) 0 0 50px;
      }
-@media only screen and (max-width: 768px) {
-	img {
-	height: 100%;
-	width: auto;
 	}
-}
+
+@keyframes animate {
+			0% {
+		  background-position: -300%;
+		}
+		100% {
+		  background-position: 500%;
+		}
+	  }
 @media only screen and (min-width: 480px) {
 	img {
 	height: 100%;
