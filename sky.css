@@ -68,13 +68,15 @@ ul li a:hover:after
 	width: 99%;
 	height: 100%;
 	background-image: url(res/another.png);
-	background-position: center;
-	background-repeat: no-repeat;
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
 	background-size:cover;
+	background-position:center;
 	z-index: 0;
 	opacity: 1;
 	background-color: #f00;
-	background-attachment: fixed;
 }
 #blur{
 	position: relative;
