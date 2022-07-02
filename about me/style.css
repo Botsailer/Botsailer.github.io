@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#vid {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.front {
+    text-align: center;
+    justify-content: center ;
+    position: relative;
+    height: 100vh;
+    width: 90%;
+    margin-top: 37%;
+    background-color: transparent;
+    margin-left: 5%;
+    z-index: 0;
+}
+
+#c {
+    margin-top: 2%;
+    height: 150%;
+    width: 98%;
+    padding: 1em;
+    position: absolute;
+    background-color: rgb(243, 247, 247);
+    opacity: 0.4;
+}
+#para{
+    position: absolute;
+    z-index: 1;
+    margin-top: 12%;    
+    width: 100%;
+}
+#w{
+    font-size: 3em;
+    font-weight: bold;
+    margin-left: 0;
+}
+#wh{
+    text-align: left;
+    -webkit-text-stroke: 0.1em rgb(65, 8, 104) ;
+}
+#wh2{
+    text-align: right;
+    -webkit-text-stroke: 0.1em rgb(56, 8, 8) ;
+}
+#para2{
+    position: absolute;
+    z-index: 1;
+    margin-top: 45%;    
+    width: 100%;
+}
+#el {
+    width: 96.7%;
+    padding: 1.5em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    background: rgb(194, 124, 203);
+    background: linear-gradient(90deg, rgba(194, 124, 203, 1) 0%, rgba(43, 121, 9, 1) 55%, rgba(0, 212, 255, 1) 100%);
+}
+.csi1{
+    border-radius: 200%;
+    float: right;
+}
+.csi2{
+    border-radius: 200%;
+    float: left;
+}
+.hr{
+
+	border: 2em dotted #041add;
+    width: 50%;
+    margin-left: 20%;
+    border-top: none;
+    margin-bottom: 2em;
+}
+#h {
+        text-transform: uppercase;
+       background-image: linear-gradient(
+         -225deg,
+         #231557 0%,
+         #44107a 29%,
+         #ff1361 67%,
+         #fff800 100%
+       );
+       background-size: auto auto;
+       background-clip: border-box;
+       background-size: 200% auto;
+       color: rgb(0, 122, 236);
+       background-clip: text;
+       text-fill-color: transparent;
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       animation: textclip 2s linear infinite;
+       display: inline-block;
+           font-size: 5em;
+     }
+     
+     @keyframes textclip {
+       to {
+         background-position: 200% center;
+       }
+     }
