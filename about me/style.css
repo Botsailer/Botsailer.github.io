@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-#vid {
+.vid {
     position: fixed;
     right: 0;
     bottom: 0;
