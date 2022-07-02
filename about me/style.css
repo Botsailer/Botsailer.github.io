@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -44,15 +44,15 @@
 #w{
     font-size: 3em;
     font-weight: bold;
-    margin-left: 0;
+    margin-left: 15%;
 }
 #wh{
-    font-family: 'Rubik Moonrocks', cursive;
+    font-family: 'Lobster', cursive;
     text-align: left;
     font-size: 2em;
 }
 #wh2{
-    font-family: 'Rubik Moonrocks', cursive;
+    font-family: 'Lobster', cursive;
     text-align: right;
 }
 #para2{
