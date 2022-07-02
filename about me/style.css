@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -45,12 +47,13 @@
     margin-left: 0;
 }
 #wh{
+    font-family: 'Rubik Moonrocks', cursive;
     text-align: left;
-    -webkit-text-stroke: 0.1em rgb(65, 8, 104) ;
+    font-size: 2em;
 }
 #wh2{
+    font-family: 'Rubik Moonrocks', cursive;
     text-align: right;
-    -webkit-text-stroke: 0.1em rgb(56, 8, 8) ;
 }
 #para2{
     position: absolute;
@@ -98,7 +101,7 @@
        background-size: 200% auto;
        color: rgb(0, 122, 236);
        background-clip: text;
-       text-fill-color: transparent;
+       text-fill-color: #ff5e;
        -webkit-background-clip: text;
        -webkit-text-fill-color: transparent;
        animation: textclip 2s linear infinite;
